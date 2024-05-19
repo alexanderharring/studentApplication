@@ -7,7 +7,7 @@ namespace CarbonTracker
     {
         static void Main()
         {
-            const string ConnectionString = "Data Source=DESKTOP-8BNVI95;Initial Catalog=carbon;Integrated Security=True;TrustServerCertificate=True";
+            const string ConnectionString = "Data Source=LAPTOP-SMKPBBBG\\SQLEXPRESS;Initial Catalog=studentStuff;Integrated Security=True;TrustServerCertificate=True";
 
 			Console.WriteLine(ConnectionString);            
             CarbonTrackerDb db = new(ConnectionString);
