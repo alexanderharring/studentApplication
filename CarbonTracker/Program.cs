@@ -9,7 +9,7 @@ namespace CarbonTracker
         {
             const string ConnectionString = "Data Source=LAPTOP-SMKPBBBG\\SQLEXPRESS;Initial Catalog=studentStuff;Integrated Security=True;TrustServerCertificate=True";
 
-			Console.WriteLine(ConnectionString);            
+            Console.WriteLine(ConnectionString);
             CarbonTrackerDb db = new(ConnectionString);
 
             var names = db.GetUserNames();
@@ -20,9 +20,9 @@ namespace CarbonTracker
             }
             Console.WriteLine();
 
-            Console.WriteLine("Please enter a name to add:");
-            string newName = Console.ReadLine() ?? string.Empty;
-            db.AddUserName(newName);
+            //         Console.WriteLine("Please enter a name to add:");
+            //         string newName = Console.ReadLine() ?? string.Empty;
+            //         db.AddUserName(newName);
         }
     }
 }
